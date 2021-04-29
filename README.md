@@ -67,15 +67,16 @@ Click on result images to see full size images.
 
 ## Usage
 
-### Prerequisites
-1. Tensorflow
-2. Python packages : numpy, scipy, PIL(or Pillow), matplotlib
-3. Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Save the file under `pre_trained_model`  
-4. MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  (Notice that the file size is over 12GB!!)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Extract images to `train2014`.
+### Environment
+1. tensorflow         1.9.0 
+2. Pillow             8.2.0
+3. moviepy            1.0.2
+4. numpy              1.19.2
+5. scipy              1.1.0
+6. Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) 
+   Save the file under `pre_trained_model` 
+7. MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
+   Extract images to `train2014`
 
 ### Train
 ```
