@@ -34,7 +34,7 @@ def parse_args():
     parser.add_argument('--num_epochs', type=int, default=5, help='The number of epochs to run')
     parser.add_argument('--batch_size', type=int, default=6, help='Batch size')
 
-    parser.add_argument('--checkpoint_every', type=int, default=500, help='save a trained model every after this number of iterations')
+    parser.add_argument('--checkpoint_every', type=int, default=1000, help='save a trained model every after this number of iterations')
 
     parser.add_argument('--test', type=str, default=None,
                         help='File path of content image (notation in the paper : x)')
