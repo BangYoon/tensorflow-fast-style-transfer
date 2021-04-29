@@ -19,9 +19,9 @@ Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 
 ### Download
 * Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) 
-   Save the file under `pre_trained_model` 
+> Save the file under `pre_trained_model` 
 * MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
-   Extract images to `train2014`
+> Extract images to `train2014`
 
 ### Train
 ```
