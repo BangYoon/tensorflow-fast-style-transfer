@@ -79,6 +79,5 @@ Train time for 2 epochs with 6 batch size is 5~6 hours.
 
 ## References
 Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer  
-* The major difference between [2] and implementation in here is the architecture of image-transform-network. I made it just as in the paper. Please see the [supplementary](http://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16Supplementary.pdf) of the paper.
 
 
