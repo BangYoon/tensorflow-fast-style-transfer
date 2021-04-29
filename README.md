@@ -6,76 +6,23 @@ A tensorflow implementation of fast style transfer described in the papers:
 
 I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) (Neural style) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since implementation in here is almost similar to it.  
 
-## Sample results
-
-All style-images and content-images to produce following sample results are given in `style` and `content` folders.
-
-### Chicago
-Following results with `--max_size 1024` are obtained from *chicago* image, which is commonly used in other implementations to show their performance.
-
-Click on result images to see full size images.
-
-<p align='center'>
-<img src = 'content/chicago.jpg' height="220px">
-</p>
-<p align='center'>
-<img src = 'style/thumbs/wave.jpg' height = '210px'>
-<img src = 'samples/chicago_wave.jpg' height = '210px'>
-<img src = 'samples/chicago_the_scream.jpg' height = '210px'>
-<img src = 'style/thumbs/the_scream.jpg' height = '210px'>
-<br>
-<img src = 'style/thumbs/la_muse.jpg' height = '210px'>
-<img src = 'samples/chicago_la_muse.jpg' height = '210px'>
-<img src = 'samples/chicago_rain_princess.jpg' height = '210px'>
-<img src = 'style/thumbs/rain_princess.jpg' height = '210px'>
-<br>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
-<img src = 'samples/chicago_shipwreck.jpg' height = '210px'>
-<img src = 'samples/chicago_udnie.jpg' height = '210px'>
-<img src = 'style/thumbs/udnie.jpg' height = '210px'>
-<br>
-</p>
-
-### Female Knight
-The source image is from https://www.artstation.com/artwork/4zXxW
-
-Results were obtained from default setting except `--max_size 1920`.  
-An image was rendered approximately after 100ms on  GTX 980 ti.
-
-Click on result images to see full size images.
-
-<p align='center'>
-<img src = 'content/female_knight.jpg' height="220px">
-</p>
-<p align='center'>
-<img src = 'style/thumbs/wave.jpg' height = '210px'>
-<img src = 'samples/female_knight_wave.jpg' height = '210px'>
-<img src = 'samples/female_knight_the_scream.jpg' height = '210px'>
-<img src = 'style/thumbs/the_scream.jpg' height = '210px'>
-<br>
-<img src = 'style/thumbs/la_muse.jpg' height = '210px'>
-<img src = 'samples/female_knight_la_muse.jpg' height = '210px'>
-<img src = 'samples/female_knight_rain_princess.jpg' height = '210px'>
-<img src = 'style/thumbs/rain_princess.jpg' height = '210px'>
-<br>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
-<img src = 'samples/female_knight_shipwreck.jpg' height = '210px'>
-<img src = 'samples/female_knight_udnie.jpg' height = '210px'>
-<img src = 'style/thumbs/udnie.jpg' height = '210px'>
-<br>
-</p>
-
 ## Usage
 
 ### Environment
-1. tensorflow         1.9.0 
-2. Pillow             8.2.0
-3. moviepy            1.0.2
-4. numpy              1.19.2
-5. scipy              1.1.0
-6. Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) 
+* CUDA version: 11.0
+* GPU : GeForce RTX 2080 SUPER
+
+* tensorflow         1.9.0 
+* Pillow             8.2.0
+* moviepy            1.0.2
+* numpy              1.19.2
+* scipy              1.1.0
+
+
+### Download
+* Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) 
    Save the file under `pre_trained_model` 
-7. MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
+* MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
    Extract images to `train2014`
 
 ### Train
@@ -130,17 +77,10 @@ python run_test.py --content <content file> --style_model <style-model file> --o
 
 ## Train time
 
-Train time for 2 epochs with 8 batch size is 6~8 hours. It depends on which style image you use.
+Train time for 2 epochs with 6 batch size is 5~6 hours. 
 
 ## References
-
-The implementation is based on the projects:
-
-[1] Torch implementation by paper author:  https://github.com/jcjohnson/fast-neural-style  
-* The major difference between [1] and implementation in here is to use VGG19 instead of VGG16 in calculation of loss functions. I did not want to give too much modification on my previous implementation on style-transfer.  
-
-[2] Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer  
+Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer  
 * The major difference between [2] and implementation in here is the architecture of image-transform-network. I made it just as in the paper. Please see the [supplementary](http://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16Supplementary.pdf) of the paper.
 
-## Acknowledgements
-This implementation has been tested with Tensorflow over ver1.0 on Windows 10 and Ubuntu 14.04.
+
