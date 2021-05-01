@@ -26,7 +26,7 @@ Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 ### Train
 ```
 python run_train.py --style <style file> --output <output directory> 
---trainDB <trainDB directory> --vgg_model <model directory>
+                    --trainDB <trainDB directory> --vgg_model <model directory>
 ```
 *Example*:
 `python run_train.py --style style/wave.jpg --output model --trainDB train2014 --vgg_model pre_trained_model`
