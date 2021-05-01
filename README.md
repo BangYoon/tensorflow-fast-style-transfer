@@ -7,7 +7,7 @@ A tensorflow implementation of fast style transfer described in the papers:
 
 ## Usage
 
-### Environment
+### Environment (2021.04.30)
 Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 
 * tensorflow         1.9.0 
