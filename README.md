@@ -16,6 +16,10 @@ Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 * numpy              1.19.2
 * scipy              1.1.0
 
+### Train time
+
+5~6 hours for training with 4 epochs and 6 batch size.
+
 
 ### Download
 * Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat) 
@@ -73,10 +77,6 @@ python run_test.py --content <content file> --style_model <style-model file> --o
 
 *Optional* :  
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None`
-
-## Train time
-
-Train time for 2 epochs with 6 batch size is 5~6 hours. 
 
 ## References
 Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer  
