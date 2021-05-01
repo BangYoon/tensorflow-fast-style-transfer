@@ -8,8 +8,6 @@ A tensorflow implementation of fast style transfer described in the papers:
 ## Usage
 
 ### Environment (2021.04.30)
-Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
-
 * tensorflow         1.9.0 
 * Pillow             8.2.0
 * moviepy            1.0.2
@@ -18,6 +16,7 @@ Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 
 ### Train time
 
+Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
 5~6 hours for training with 4 epochs and 6 batch size.
 
 
