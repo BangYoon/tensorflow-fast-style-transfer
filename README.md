@@ -16,8 +16,8 @@ A tensorflow implementation of fast style transfer described in the papers:
 
 ### Train time
 
-Use GeForce RTX 2080 SUPER (CUDA version: 11.0)
-5~6 hours for training with 4 epochs and 6 batch size.
+Use GeForce RTX 2080 SUPER (CUDA version: 11.0) <br>
+5~6 hours for training with 4 epochs and 6 batch size. <br>
 
 
 ### Download
